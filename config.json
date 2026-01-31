@@ -2830,6 +2830,57 @@
 		{
 			"maker": "rak",
 			"class": "community",
+			"name": "RAK Wireless WisBlock / WisMesh (RAK 3401)",
+			"icon": "/img/lora.svg",
+			"tooltip": "<img class='device' src='/img/rak_3401.svg'>",
+			"type": "nrf52",
+			"erase": "FLASH_ERASE_nrf52_softdevice_v6.zip",
+			"firmware": [
+				{
+					"role": "companionBle",
+					"github": {
+						"type": "companion",
+						"files": {
+							"flash": "RAK_3401_companion_radio_ble.*?\\.zip",
+							"download": "RAK_3401_companion_radio_ble.*?\\.uf2"
+						}
+					}
+				},
+				{
+					"role": "companionUsb",
+					"github": {
+						"type": "companion",
+						"files": {
+							"flash": "RAK_3401_companion_radio_usb.*?\\.zip",
+							"download": "RAK_3401_companion_radio_usb.*?\\.uf2"
+						}
+					}
+				},
+				{
+					"role": "repeater",
+					"github": {
+						"type": "repeater",
+						"files": {
+							"flash": "RAK_3401_[rR]epeater.*?\\.zip",
+							"download": "RAK_3401_[rR]epeater.*?\\.uf2"
+						}
+					}
+				},
+				{
+					"role": "roomServer",
+					"github": {
+						"type": "room-server",
+						"files": {
+							"flash": "RAK_3401_room_server.*?\\.zip",
+							"download": "RAK_3401_room_server.*?\\.uf2"
+						}
+					}
+				}
+			]
+		},
+		{
+			"maker": "rak",
+			"class": "community",
 			"name": "RAK Wireless WisBlock / WisMesh (RAK 4631)",
 			"icon": "/img/lora.svg",
 			"tooltip": "<img class='device' src='/img/rak_4631.svg'>",
